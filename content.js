@@ -11,7 +11,7 @@ findString("Bubble Tea");
 
 //BLOCK THE PARTIAL DOMAINS
 findURL = function changeURL(text) {
-    var current = window.location.href;
+    let current = window.location.href;
     if (current === text) {
         window.location.replace("https://youtube.com/yanjaa");
     }
@@ -19,7 +19,7 @@ findURL = function changeURL(text) {
 
 //BLOCK THE ENTIRE DOMAIN WITH THE FOLLOWING FUNCTION
 findAllURL = function changeAllURL(text) {
-    var current = window.location.href;
+    let current = window.location.href;
     if (current.startsWith(text)) {
         document.documentElement.innerHTML = '';
         document.documentElement.innerHTML = 'Domain is blocked';
